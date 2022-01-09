@@ -1,6 +1,8 @@
 import config from './secret.env.json'
 
 export const dataConfig = config;
+
+
 export function getUrl():string {
     if(process.env.NODE_ENV?.localeCompare("stage")){
         return "http://dummy.restapiexample.com"
